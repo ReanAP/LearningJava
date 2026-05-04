@@ -5,19 +5,22 @@ public class ForLoop {
     public static void main(String[] args) {
 
         int i;
-        int max;
+        int j;
+        int column;
+        int rows;
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("How Many Times Do You Want To Run The Loop? ");
-        max = scanner.nextInt();
+        column = scanner.nextInt();
+        System.out.print("How Long Do Want The Matric To Be? ");
+        rows = scanner.nextInt();
+        System.out.println();
 
-        for (i = 1; i <= max ;i++) {
-
-            if(i == 5) {
-                continue;
+        for (i = 1; i <= rows; i++ ) {
+            for (j = 1; j <= column ;j++) {
+                System.out.print(j + " ");
             }
-
-            System.out.println("NUM: " + i);
+            System.out.println("");
         }
     }
 }
