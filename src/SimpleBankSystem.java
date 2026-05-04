@@ -7,7 +7,7 @@ public class SimpleBankSystem {
 
     public static void main(String[] args) {
 
-        double opt;
+        int opt;
 
         do {
             opt = start();
@@ -49,25 +49,35 @@ public class SimpleBankSystem {
         double deposit = scanner.nextDouble();
         System.out.print("");
 
-        balance = balance + deposit;
+        if (deposit < 0) {
+            System.out.println("You cannot deposit negative Balance");
+        } else {
 
-        System.out.print("");
-        System.out.print("You Have Successfully Deposited " + deposit + " Amount Your Current Balance Is " + balance + "\n");
-        System.out.print("");
+            balance = balance + deposit;
+
+            System.out.print("");
+            System.out.print("You Have Successfully Deposited " + deposit + " Amount Your Current Balance Is " + balance + "\n");
+            System.out.print("");
+
+        }
 
     }
 
     static void withdraw() {
-        System.out.print("");
-        System.out.println("How Much Money Would You Like To Withdraw: ");
-        double withdraw = scanner.nextDouble();
-        System.out.print("");
+        if (balance <= 0) {
+            System.out.println("You Have No Money!");
+        }
+        else {
+            System.out.print("");
+            System.out.print("How Much Money Would You Like To Withdraw: ");
+            double withdraw = scanner.nextDouble();
+            System.out.print("");
 
-        balance = balance - withdraw;
+            balance = balance - withdraw;
 
-        System.out.print("");
-        System.out.println("You Have Successfully Withdrawn " + withdraw + " Amount Your Current Balance Is " + balance + "\n");
-
+            System.out.print("");
+            System.out.println("You Have Successfully Withdrawn " + withdraw + " Amount Your Current Balance Is " + balance + "\n");
+        }
 
     }
 
