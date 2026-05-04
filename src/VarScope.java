@@ -1,14 +1,16 @@
 public class VarScope
 {
 
-    int x = 77;
+    static int x = 77;
 
     public static void main(String[] args)
     {
 
-        int x = 21;
+//        int x = 21;
 
-        System.out.print(x);
+        System.out.println(x);
+
+        func();
     }
 
     static void func()
@@ -16,6 +18,6 @@ public class VarScope
 
         int x = 9;
 
-        System.out.print(x);
+        System.out.println(x);
     }
 }

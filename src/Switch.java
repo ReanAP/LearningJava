@@ -19,7 +19,6 @@ public class Switch {
             case "Saturday", "Sunday"
                     -> System.out.println("\nIt Is A WeekEnd");
 
-
             default -> System.out.println("\n" + day + " Is Not A Real Day!!");
 
         }
