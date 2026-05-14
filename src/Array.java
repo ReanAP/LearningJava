@@ -9,6 +9,8 @@ public class Array {
         int len = fruits.length;
 
         Arrays.sort(fruits);
+
+//        System.out.println(len);
 //       for (int i = 0; i<len; i++) {
 //           System.out.println(fruits[i]);
 //       }
