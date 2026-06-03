@@ -1,19 +1,14 @@
 public class Car {
 
-    String brand = "Ford";
-    String model = "Mustang";
-    int year = 2024;
-    boolean isRunning = false;
+    String modele;
+    String coloure;
 
-    void start() {
-        isRunning = true;
-        System.out.println("Car is Running Now!");
+    Car(String model, String colour) {
+        this.modele = model;
+        this.coloure = colour;
     }
-    void stop() {
-        isRunning = false;
-        System.out.println("Car has Stopped!");
-    }
+
     void drive() {
-        System.out.println("You Are Driving A " + brand + " " + model);
+        System.out.println("You Drive "+ coloure + " " + modele);
     }
 }
