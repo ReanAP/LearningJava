@@ -6,6 +6,11 @@ public class workers {
         this.age = umar;
         this.salary = paisa;
     }
+
+    public workers() {
+
+    }
+
     void role(){
         System.out.println("Iam A Worker!");
     }

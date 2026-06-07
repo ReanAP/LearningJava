@@ -4,9 +4,9 @@ public class CallingClass {
 
         Car car = new Car();
 
-        Student student1 = new Student("Henry", 21, 3.4);
-        Student student2 = new Student("Thomas", 19, 3.1);
-        Student student3 = new Student("Alie", 22, 3.8);
+        Student student1 = new Student("Henry", "21", 3.4);
+        Student student2 = new Student("Thomas", "gen", 3.1);
+        Student student3 = new Student("Alie", "22", 3.8);
 
         teachers teach1 = new teachers("Rajesh", "English", 5, true);
         teachers teach2 = new teachers("Rubika", "Physics", 8, false);
@@ -30,7 +30,7 @@ public class CallingClass {
 
 //        student3.study();
 
-            teach2.intro();
+//            teach2.intro();
 
 
     }
